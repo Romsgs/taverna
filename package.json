@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/app.js",
+    "start": "ts-node app.js",
     "watch-node": "nodemon dist/app.js",
     "watch-ts": "tsc -w",
     "deploy": "git add . && git commit -m Heroku && git push heroku master",
@@ -31,11 +31,10 @@
     "@typescript-eslint/parser": "^5.24.0",
     "eslint": "^8.15.0",
     "nodemon": "^2.0.16",
-    "ts-node": "^10.7.0",
-    "ts-node-dev": "^1.1.8",
     "typescript": "^4.6.4"
   },
   "dependencies": {
+    "ts-node": "^10.7.0",
     "typescript": "^4.6.4",
     "ts-node-dev": "^1.1.8",
     "@prisma/client": "^3.14.0",
