@@ -5,12 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node app.js",
-    "watch-node": "nodemon dist/app.js",
+    "watch-node": "nodemon dist/app.ts",
     "watch-ts": "tsc -w",
     "deploy": "git add . && git commit -m Heroku && git push heroku master",
     "dev": "ts-node-dev --respawn --transpile-only --ignore_watch --no-notify ./app.ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "tsc && mv -i -v public dist/ && rm -v -rf src"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Romulo Salobreña",
   "license": "ISC",
