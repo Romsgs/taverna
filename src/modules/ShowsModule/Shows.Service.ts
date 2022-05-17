@@ -8,7 +8,6 @@ export default class ShowService {
   }
 
   async createShow(body: ShowsDto) {
-    console.log(body)
     await this.prisma.show.create({
       data: {
         address: body.address,
@@ -18,5 +17,7 @@ export default class ShowService {
         income: body.income
       },
     });
+    return "OK"
+
   }
-}
+  }

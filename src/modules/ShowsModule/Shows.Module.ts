@@ -5,7 +5,6 @@ export default class ShowsModule{
   constructor(private showService = new ShowService){}
   async getShows(req: Request,res: Response){
     const shows = await this.showService.getShow()
-    console.table(shows)
     res.render('showsPage', {shows: shows})
   }
   async createShow(req: Request,res: Response){
