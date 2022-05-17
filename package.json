@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts.node.dev --respawn --transpile-only --ignore_watch --no-notify scr/server",
+    "start": "ts-node-dev --respawn --transpile-only --no-notify ./app.ts",
+    "dev": "ts-node-dev --respawn --transpile-only --ignore_watch --no-notify ./app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Romulo Salobreña",
@@ -31,6 +32,8 @@
     "typescript": "^4.6.4"
   },
   "dependencies": {
+    "typescript": "^4.6.4",
+    "ts-node-dev": "^1.1.8",
     "@prisma/client": "^3.14.0",
     "argon2": "^0.28.5",
     "config": "^3.3.7",
