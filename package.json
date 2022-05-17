@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node app.ts",
-    "watch-node": "nodemon dist/app.ts",
     "watch-ts": "tsc -w",
     "deploy": "git add . && git commit -m Heroku && git push heroku master",
     "dev": "ts-node-dev --respawn --transpile-only --ignore_watch --no-notify ./app.ts",
