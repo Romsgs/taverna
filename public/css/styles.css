@@ -1,0 +1,21 @@
+table{
+  width: 95%;
+}
+th{
+  text-align: center;
+  background-color: blue;
+  color: white
+}
+tr{
+  text-align: center;
+}
+tr:nth-child(even) {
+  background-color: aliceblue;
+}
+tr:nth-child(even) {
+  background-color:azure;
+}
+td{
+  padding: 5px;
+  text-align: center;
+}
