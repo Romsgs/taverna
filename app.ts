@@ -9,4 +9,4 @@ app.set("view engine", "ejs");
 app.use('/shows',mainRouter)
 app.use('/',mainRouter)
 
-app.listen(config.get('PORT'), ()=>{console.log(`listening on ${config.get('HOST')}${config.get('PORT')}`)})
+app.listen(8080, ()=>{console.log(`listening on ${config.get('HOST')}${config.get('PORT')}`)})
