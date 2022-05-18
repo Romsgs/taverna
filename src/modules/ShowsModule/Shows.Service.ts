@@ -14,8 +14,17 @@ export default class ShowService {
         contact: body.contact,
         mapsLink: body.mapsLink,
         when: body.when,
-        income: body.income
+        income: body.income,
+        fee: body.fee
       },
+    });
+    return "OK"
+
+  }
+
+  async deleteShow(id: string) {
+    await this.prisma.show.delete({
+      where:{id}
     });
     return "OK"
 

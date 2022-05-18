@@ -4,4 +4,5 @@ export interface ShowsDto {
   mapsLink: string
   income:    number
   contact:   string
+  fee: number
 }

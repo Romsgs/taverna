@@ -1,11 +1,13 @@
 <table>
+  <tr id="titulo">
   <th>When / Quando </th>
   <th>Map's link </th>
   <th>Where / Onde </th>
   <th>Contact / Contato </th>
-
+  <th>ticket / ingresso </th>
+  </tr>
   <% for(let show of shows) { %>
-   <tr>
+   <tr class="item">
     <td>
       <%- show.when %>
     </td>
@@ -17,6 +19,9 @@
     </td>
     <td>
       <%=show.contact%>
+    </td>
+    <td>
+      <%=show.fee%>
     </td>
   </tr> 
   <% } %>

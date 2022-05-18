@@ -17,6 +17,7 @@ model Show {
   address   String
   when      DateTime
   mapsLink  String
-  income    Int
-  contact   String
+  income    Int @default(000000)
+  contact   String @default("- - -")
+  fee       Int @default(0)
 }

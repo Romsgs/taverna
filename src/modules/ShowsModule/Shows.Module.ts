@@ -12,4 +12,18 @@ export default class ShowsModule{
     const shows = await this.showService.getShow()
     res.render('showsPage', {shows})
   }
+  async index(req, res){
+    res.render('index')
+  }
+  async about(req, res){
+    res.render('about')
+  }
+  async agenda(req, res){
+    const shows = await this.showService.getShow()
+    res.render('agenda', {shows: shows})
+  }
+  async criarShow(req, res){
+    const body = req.body
+    
+  }
 }

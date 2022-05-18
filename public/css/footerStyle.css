@@ -1,0 +1,32 @@
+footer{
+    color: rgb(150, 34, 0);
+    width: 100%;
+    
+    background-color: rgba(35, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 30px;
+}
+.footerIcon{
+
+    width: 50px;
+}
+#icones{
+    margin-top: 20px;
+    width: 350px;
+}
+#tavernaFooter{
+    
+    margin-top:30px;
+    height: 130px;
+
+    
+}
+@media screen and (max-width: 1080px){
+    #icones{
+        width: 90%;
+    }
+}
