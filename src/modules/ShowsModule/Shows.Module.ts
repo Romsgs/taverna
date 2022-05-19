@@ -8,7 +8,17 @@ export default class ShowsModule{
     res.render('showsPage', {shows: shows})
   }
   async createShow(req: Request,res: Response){
-    await this.showService.createShow(req.body)
+    const form: HTMLFormElement = document.querySelector('form');
+    form.onsubmit = () => {
+      const formData = new FormData(form);
+      const text = formData.get('textInput') as string;
+      console.log(text);
+      return false; // prevent reload
+    };
+    const {when, address, mapsLink, income, contact, fee} = req.body
+    const body = {when, address, mapsLink, income, contact, fee}
+    console.log(body)
+    await this.showService.createShow(body)
     const shows = await this.showService.getShow()
     res.render('showsPage', {shows})
   }
@@ -23,7 +33,7 @@ export default class ShowsModule{
     res.render('agenda', {shows: shows})
   }
   async criarShow(req, res){
-    const body = req.body
+    res.render('criarShowForm')
     
   }
 }

@@ -14,9 +14,9 @@ model Show {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now())
-  address   String
-  when      DateTime
-  mapsLink  String
+  address   String @default("ja que a gente descobre")
+  when      DateTime @default(now())
+  mapsLink  String @default("google.maps")
   income    Int @default(000000)
   contact   String @default("- - -")
   fee       Int @default(0)
