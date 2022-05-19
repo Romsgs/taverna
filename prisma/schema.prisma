@@ -17,7 +17,7 @@ model Show {
   address   String @default("ja que a gente descobre")
   when      DateTime @default(now())
   mapsLink  String @default("google.maps")
-  income    Int @default(000000)
+  income    String @default("000000")
   contact   String @default("- - -")
-  fee       Int @default(0)
+  fee       String @default("0")
 }

@@ -1,12 +1,13 @@
 <%- include('./partials/header')%>
 <link rel="stylesheet" href="./css/formStyle.css">
-<form action="/shows" method="POST" enctype="multipart/form-data">
-  <input name="address" id="address" placeholder="Onde será o Show?"/>
-  <input name="when" id="when" placeholder="Quando será o Show? AAAA-MM-DDTHH:MM:SSZ"/>
-  <input name="contact" id="contact" placeholder="tem algum contato desse show para mostrar ao público???"/>
-  <input name="mapsLink" id="mapsLink" placeholder="coloca aqui o link do google maps"/>
-  <input name="income" id="income" placeholder="Quantos dinares nos vamos ganhar nessa gig?"/>
-  <input name="fee" id="fee"  placeholder="quanto custam os ingressos?"/>
+<form action="/shows" method="POST" enctype="application/x-www-form-urlencoded">
+  <input name="address" type="text" id="address" placeholder="Onde será o Show?"/>
+  <input type="datetime-local" name="when"/>
+  <!-- <input name="when" id="when" type="datetime" placeholder="Quando será o Show? AAAA-MM-DDTHH:MM:SSZ"/> -->
+  <input name="contact" id="contact" type="text" placeholder="tem algum contato desse show para mostrar ao público???"/>
+  <input name="mapsLink" id="mapsLink" type="text" placeholder="coloca aqui o link do google maps"/>
+  <input name="income" id="income" type="text" placeholder="Quantos dinares nos vamos ganhar nessa gig?"/>
+  <input name="fee" id="fee" type="text" placeholder="quanto custam os ingressos?"/>
   <button type="submit">Criar Show</button>
 </form>
 <%- include('./partials/footer')%>

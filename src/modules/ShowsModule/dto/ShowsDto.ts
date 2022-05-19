@@ -2,7 +2,7 @@ export interface ShowsDto {
   address: string;
   when: string;
   mapsLink: string;
-  income: number;
+  income: string;
   contact: string;
-  fee: number;
+  fee: string;
 }

@@ -13,7 +13,7 @@ export default class ShowService {
         address: body.address,
         contact: body.contact,
         mapsLink: body.mapsLink,
-        when: body.when,
+        when: body.when + ":00Z",
         income: body.income,
         fee: body.fee
       },

@@ -4,7 +4,8 @@ import config from 'config'
 import router from './src/routes/router';
 import bodyParser from 'body-parser';
 const app = express()
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json())
 app.use(express.static('public'))
 app.set("view engine", "ejs");
